@@ -1,6 +1,10 @@
 {
     "extends": "@zardoy/tsconfig",
     "compilerOptions": {
-        "declaration": true
-    }
+        "declaration": true,
+        "noUncheckedIndexedAccess": false
+    },
+    "include": [
+        "src"
+    ]
 }

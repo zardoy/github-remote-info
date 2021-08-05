@@ -6,6 +6,9 @@
   "repository": "https://github.com/zardoy/github-remote-info.git",
   "author": "Vitaly Turovsky <vital2580@icloud.com>",
   "license": "MIT",
+  "scripts": {
+    "prepublishOnly": "tsc"
+  },
   "dependencies": {
     "git-remote-origin-url": "^3.1.0"
   },
