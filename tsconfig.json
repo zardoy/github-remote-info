@@ -1,8 +1,8 @@
 {
-    "extends": "@zardoy/tsconfig/node",
+    "extends": "@zardoy/tsconfig/node-lib",
     "compilerOptions": {
-        "declaration": true,
-        "noUncheckedIndexedAccess": false
+        "noUncheckedIndexedAccess": false,
+        "outDir": "build"
     },
     "include": [
         "src"
