@@ -1,7 +1,13 @@
 import { URL } from 'url';
 import remoteOrigin from 'git-remote-origin-url';
 
-export const getGithubRemoteInfo = async (repoRootPath: string): Promise<Record<'owner' | 'name', string> | undefined> => {
+//TODO didn't name repo because it could be annoying to see in import suggestions
+export interface RepoInfo {
+    owner: string
+    name: string
+}
+
+export const getGithubRemoteInfo = async (repoRootPath: string): Promise<RepoInfo | undefined> => {
     let originUrl: undefined | string;
     try {
         try {
